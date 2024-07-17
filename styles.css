@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+button {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+pre {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
