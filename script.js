@@ -18,22 +18,30 @@ function iterateArray() {
     for (let indexIn in arr) {
         output += `for...in: Index ${indexIn} has value ${arr[indexIn]}\n`;
     }
-    // for...in: Iterates over the enumerable properties of an object, including the array's indices.
+    /*
+    for...in:Used to iterate over enumerable properties of an object, such as object properties or array keys.
+    Iterates over all enumerable properties, including inherited ones if not filtered out.
+     */
 
     console.log("------------for...of------------");
     // for...of
     for (let indexOf of arr) {
         output += `for...of: Value ${indexOf}\n`;
     }
-    // for...of: Iterates over the values of an iterable object, such as arrays or strings.
+    /*
+    for...of:Iterates over iterable objects like arrays, strings, maps, sets, etc., returning the values of the iterable.
+    Does not iterate over properties, but directly over the values.
+     */
 
     console.log("------------.forEach()------------");
     // .forEach()
     arr.forEach((value, index) => {
         output += `forEach: Index ${index} has value ${value}\n`;
     })
-    // .forEach(): Calls a provided function once for each array element.
-
+    /*
+    .forEach():A method available on arrays that executes a provided function once for each array element.
+    Typically used for iterating over arrays, but not suitable for objects or other iterables without conversion.
+     */
     document.getElementById('arrayOutput').innerText = output;
 }
 
